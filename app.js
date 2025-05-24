@@ -4,10 +4,10 @@ const taskRouters = require("./Router/taskRouter");
 const connectDB = require("./database/connection");
 require('dotenv').config()
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const path = require("path");
-// const cors = require("cors");
-// app.use(cors());
+const cors = require("cors");
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, "./public")));
 app.use(express.json());
