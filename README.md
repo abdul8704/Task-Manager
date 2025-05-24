@@ -31,17 +31,21 @@ A simple Task Manager app built with **Node.js**, **Express**, and **MongoDB**. 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/task-manager.git
-   cd task-manager```
+   git clone https://github.com/abdul8704/task-manager.git
+   cd task-manager
+   ```
 2. **Install dependencies**
     ```bash
-    npm install```
+    npm install
+    ```
 3. **Create .env file**
     ```bash
-    MONGO_URI=your-mongodb-uri-here```
+    MONGO_URI=your-mongodb-uri-here
+    ```
 4. **Run the app**
     ```bash
-      npm start```
+      npm start
+    ```
 
 Visit: http://localhost:3000
 
