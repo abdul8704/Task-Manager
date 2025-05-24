@@ -98,6 +98,15 @@ formDOM.addEventListener('submit', async (e) => {
   const name = taskInputDOM.value
 
   try {
+    if(name.length < 1) {
+      formAlertDOM.style.display = 'block'
+      formAlertDOM.textContent = `Please provide task name`
+      formAlertDOM.classList.remove('text-success')
+      setTimeout(() => {
+        formAlertDOM.style.display = 'none'
+      }, 3000)
+      return
+    }
     await axios.post("/api/tasks/", { taskName: name });  
     showTasks()
     taskInputDOM.value = ''

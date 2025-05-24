@@ -341,6 +341,7 @@ form > :last-child {
   gap: 1rem;
 }
 .single-task {
+  cursor: pointer;
   padding: 1rem 2.5rem;
   background: var(--white);
   border-radius: var(--borderRadius);
